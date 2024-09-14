@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "1726328719484",
+      "task": "Xaxci",
+      "title": "RLsdgdsg",
+      "isEdited": false,
+      "date": "Saturday, September 14, 2024 19:45",
+      "isDeleted": false,
+      "backgroundColor": "#ff0000"
+    }
+  ],
+  "completedTasks": [],
+  "history": [
+    {
+      "id": "1726328719484",
+      "title": "added",
+      "taskTitle": "RL",
+      "date": "Saturday, September 14, 2024 19:45"
+    },
+    {
+      "id": "1726328719484",
+      "title": "modified",
+      "taskTitle": "RL",
+      "date": "Saturday, September 14, 2024 19:45"
+    },
+    {
+      "id": "1726328719484",
+      "title": "completed",
+      "taskTitle": "RLsdgdsg",
+      "date": "Saturday, September 14, 2024 19:45"
+    },
+    {
+      "id": "1726328719484",
+      "title": "returned it back",
+      "taskTitle": "RLsdgdsg",
+      "date": "Saturday, September 14, 2024 19:46"
+    }
+  ]
+}

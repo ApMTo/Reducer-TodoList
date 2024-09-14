@@ -1,0 +1,95 @@
+.icons_and_colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  i {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}
+
+.icons :nth-child(1) {
+  color: rgb(0, 255, 0);
+}
+
+.icons :nth-child(2) {
+  color: rgb(255, 255, 255);
+}
+
+.icons :nth-child(3) {
+  color: rgb(255, 0, 0);
+}
+
+.todoItemForm {
+  margin-top: 20px;
+  animation: openingForm 0.4s alternate;
+  input {
+    width: 160px;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    
+  }
+
+  button {
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes openingForm {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.taskEdit {
+  margin-top: 15px;
+  font-size: 16px !important;
+}
+
+.todoItemForm input:hover {
+  box-shadow: 0 0 0 0;
+}
+
+.todoItemForm input:focus {
+  background: none;
+  outline: none;
+  box-shadow: 0 0 0 0;
+}
+
+.cancel {
+  color: red !important;
+}
+
+.change_color {
+  input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin-left: 170px;
+  }
+
+  img {
+    width: 30px;
+    cursor: pointer;
+  }
+}

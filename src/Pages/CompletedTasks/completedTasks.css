@@ -1,0 +1,17 @@
+.completedTasks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+
+    div {
+        filter: brightness(60%);
+    }
+}
+
+.completedTasks div i:nth-child(2) {
+    color: red;
+}

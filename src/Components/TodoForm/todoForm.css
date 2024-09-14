@@ -1,0 +1,134 @@
+.todoForm {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.493);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  animation: floatDown 1s ease-out forwards;
+  z-index: 999;
+
+  form {
+    width: 450px;
+    min-height: 100px;
+    background-color: white;
+    box-shadow: rgba(14, 63, 126, 0.2) 0px 0px 0px 1px,
+      rgba(42, 51, 69, 0.07) 0px 1px 1px -0.5px,
+      rgba(42, 51, 70, 0.08) 0px 3px 3px -1.5px,
+      rgba(42, 51, 70, 0.08) 0px 6px 6px -3px,
+      rgba(14, 63, 126, 0.08) 0px 12px 12px -6px,
+      rgba(14, 63, 126, 0.08) 0px 24px 24px -12px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      text-align: center;
+      font-size: 23px;
+    }
+
+  }
+
+  label {
+    margin-left: 20px;
+  }
+
+  input {
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: inset #abacaf 0 0 0 2px;
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+    appearance: none;
+    width: 270px;
+    position: relative;
+    border-radius: 3px;
+    padding: 9px 12px;
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    height: 30px;
+    transition: all 0.2s ease;
+  }
+  
+}
+
+form input:hover {
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 2px;
+}
+
+form input:focus {
+  background: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0 #fff inset, #1de9b6 0 0 0 3px;
+}
+
+.goBack {
+  display: flex;
+  justify-content: flex-end;
+
+  i {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+}
+
+@keyframes floatDown {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) rotate(3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+
+.task {
+  margin-top: 10px;
+}
+
+
+form button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+form button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+.task_footer {
+  font-size: 14px;
+}
